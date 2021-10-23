@@ -12,17 +12,15 @@ import { Contact } from './component/Contact/Contact ';
 function App() {
   return (
     <>
-      <BrowserRouter>
-        <Main />
-        <Box sx={{ marginTop: 8 }}>
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route exact path="/india" component={India} />
-            <Route exact path="/world" component={World} />
-            <Route exact path="/contact" component={Contact} />
-          </Switch>
-        </Box>
-      </BrowserRouter>
+      <Main />
+      <Box sx={{ marginTop: 8 }}>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/india" component={India} />
+          <Route exact path="/world" component={World} />
+          <Route exact path="/contact" component={Contact} />
+        </Switch>
+      </Box>
     </>
   );
 }
